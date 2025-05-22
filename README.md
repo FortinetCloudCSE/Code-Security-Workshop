@@ -1,8 +1,1 @@
-
-# Code-Security-Workshop
-
-To view the workshop, please go here: [GitHub Pages Link](https://fortinetcloudcse.github.io/Code-Security-Workshop/)
-
----
-
-For more information on creating these workshops, visit [FortinetCloudCSE User Repo](https://fortinetcloudcse.github.io/UserRepo/)
+<h1>Code-Security-Workshop</h1><h3>To view the workshop, please go here: <a href="https://fortinetcloudcse.github.io/Code-Security-Workshop/">Code-Security-Workshop</a></h3><hr><h3>For more information on creating these workshops, please go here: <a href="https://fortinetcloudcse.github.io/UserRepo/">FortinetCloudCSE User Repo</a></h3>
