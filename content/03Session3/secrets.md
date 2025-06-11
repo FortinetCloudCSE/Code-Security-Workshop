@@ -7,7 +7,7 @@ weight: 6
 
 ## Session 3
 
-Using SonarQube, we can easily identify that we've leaked secrets into our application code. 
+Secrets are the Holy Grail for black hats. Using SonarQube, we can easily identify that we've leaked secrets into our application code. 
 
 1. Navigate to "Projects" and click on our WebGoat project. 
 
@@ -25,6 +25,10 @@ Using SonarQube, we can easily identify that we've leaked secrets into our appli
 
 ![](img/secrets4.png)
 
+5. Switch over to your Juice-Shop project. We have a number of authentication issues here to choose from. Expand the "Authentication" section, and click through the results. We can see there's a number of hard coded passwords in code. Scroll down further to see that that are actually bearer tokens present as well. 
+
+![](img/secrets5.png)
+
 **STOP AND THINK**. Why do we highlight something so easily preventable? Surely, no one would ever do this in a live production environment, right? 
 
 Right...?
@@ -34,3 +38,5 @@ Right...?
 More than 23.7 million hardcoded secrets were published to GitHub last year, which was 25% more than leaked secrets in 2023, despite the software development platform's intensified efforts to crack down on secret exposures, according to reports from Cybernews.
 
 https://www.msspalert.com/brief/more-than-23-7-million-hardcoded-secrets-publicly-exposed-in-github-last-year
+
+You've completed this section! You can move on to the next chapter. 
