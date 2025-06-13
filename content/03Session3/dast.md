@@ -9,7 +9,7 @@ weight: 4
 
 ### DAST
 
-While dynamic testing is not a core tenent of code security - mainly because we're dealing with the live application - DAST is still worth mentioning as part of a holistic DevSecOps approach. The same principles that we apply to SAST can be applied to DAST. Ensure the code works, is secure, and free of bugs. More often than not, SAST vs DAST is a decision based on many factors, but there's a place for both. 
+While dynamic testing is not a core tenet of code security - mainly because we're dealing with the live application - DAST is still worth mentioning as part of a holistic DevSecOps approach. The same principles that we apply to SAST can be applied to DAST. Ensure the code works, is secure, and free of bugs. More often than not, SAST vs DAST is a decision based on many factors, but there's a place for both. 
 
 In the last section, we built an automation workflow to run and scan the app whenever new code is pushed to the repository. In this example, we'll do the same with a GitHub action that runs a DAST scan using the open source OWASP Zap project. 
 

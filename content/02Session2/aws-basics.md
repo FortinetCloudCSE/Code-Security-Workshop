@@ -6,7 +6,7 @@ weight: 2
 
 ### Lab 1 Overview
 
-The goal of this lab is to, as quickly as possible, get a simple web site running and exposed to the internet.  This website will require some compute resources to run on, exposed to the Internet (inboud/outboud) and permissions to access a centrally managed database.
+The goal of this lab is to, as quickly as possible, get a simple web site running and exposed to the internet.  This website will require some compute resources to run on, exposed to the Internet (inbound/outbound) and permissions to access a centrally managed database.
 
 Application Diagram
 
@@ -50,7 +50,7 @@ Next choose Ubuntu as the operating system you want running in your new virtual 
 ![](img/ec2-2.png)
 
 Now we need configure what credentials we will use to access this virtual server once it is up and running.
-Select `FortiCNAPPKey` from the drop-down.  This key was created by Qwkilabs and can be used within AWS or from you local machine to access your virtual server.
+Select `FortiDevKey` from the drop-down.  This key was created by Qwkilabs and can be used within AWS or from you local machine to access your virtual server.
 
 ![](img/ec2-3(4).png)
 
@@ -74,7 +74,7 @@ On the Connect to instance window, keep the default option of `EC2 Instance Conn
 
 ![](img/aws-5(2).png)
 
-If succesful, you should see a terminal like interface within your AWS Console. Now you are ready to run some commands.
+If successful, you should see a terminal like interface within your AWS Console. Now you are ready to run some commands.
 
 ![](img/aws-6.png)
 
@@ -118,7 +118,7 @@ The command below will use the Ubuntu built in package management application (a
 sudo apt update && sudo apt install -y nodejs npm
 ```
 
-Notice how many files are installed running just these few commands. Hopefully there aren't any negative side effecs of making all these changes.
+Notice how many files are installed running just these few commands. Hopefully there aren't any negative side effects of making all these changes.
 
 ### Install your website dependencies 
 
@@ -132,7 +132,7 @@ cat hello-world/package.json
 
 ![](img/aws-ec2-cat-package.png)
 
-Before you can start your website you will need to install these dependencies.  Luckily you already installed Node package manager `npm`. Run the command below to chagne directory and install the needed Node packages.
+Before you can start your website you will need to install these dependencies.  Luckily you already installed Node package manager `npm`. Run the command below to change directory and install the needed Node packages.
 
 ```bash
 cd ~/hello-world
@@ -141,7 +141,7 @@ npm install
 
 ![](img/aws-ec2-npm-install.png)
 
-Notice that we only had 3 direct dependencies in our `package.json` file, but we actually added 72 packages. This is because our direct dependencies have their own dependencies, which in turn might yet more dependencies.  Software is built ontop of software. Turtles all the way down.
+Notice that we only had 3 direct dependencies in our `package.json` file, but we actually added 72 packages. This is because our direct dependencies have their own dependencies, which in turn might yet more dependencies.  Software is built on top of software. Turtles all the way down.
 
 Even more concerning is the warning that there are 8 vulnerabilities found, including 4 of high severity.
 
@@ -177,7 +177,7 @@ AWS EC2 manages network access via `Security Groups`. Return to AWS EC2, find yo
 
 ![](img/aws-ec2-open-security-group2.png)
 
-Ensure you are on the Incound Rules tab and click on `Edit inbound rules`.
+Ensure you are on the Inbound Rules tab and click on `Edit inbound rules`.
 
 ![](img/aws-ec2-lauch-inbound-rules2.png)
 
@@ -197,7 +197,7 @@ Your new website isn't showing your fancy message. Rather it is complaining abou
 
 ![](img/website-no-iam-role.png)
 
-As you might recall from the very beginning we mentioned that the website would need access to a centrally managed database. Access to cloud resources, like databases, is allowed through Identity and Access Management (IAM) IAM has conecpts like roles, policies and permissions that control what can and can't be accesssed by users and cloud resources.
+As you might recall from the very beginning we mentioned that the website would need access to a centrally managed database. Access to cloud resources, like databases, is allowed through Identity and Access Management (IAM) IAM has concepts like roles, policies and permissions that control what can and can't be accessed by users and cloud resources.
 
 By default when you create a new EC2 instance there is no IAM role attached.  This means that your virtual machine can not access any other cloud resources at the moment.
 
