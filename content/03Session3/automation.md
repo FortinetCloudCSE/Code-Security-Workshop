@@ -15,7 +15,7 @@ In the following section, we will look at an example of how to automate these pr
 
 ### GitHub Actions
 
-GitHub actions is one of the most popular approaches for implementing automation into build processes, especially when it comes to security. GHA can be used to enforce compliance on builds that don't pass basic checks, and they don't even have to be security focused. Linting, simplicity, and functionality are all reasons to implement automations to perform checks that validate the code is free of error. 
+GitHub actions is one of the most popular approaches for implementing automation into build processes, especially when it comes to security. GHA can be used to enforce compliance on builds that don't pass basic checks, and they don't even have to be security focused. Linting, simplicity, and functionality are all reasons to implement automation to perform checks that validate the code is free of error. 
 
 Further, humans are error prone. We make mistakes when we stare at the screen too long. By having automated checks at every stage of the build, deploy, and release cycles, we can prevent major problems from surfacing and ultimately reduce the overhead for developers as they'll have less code to re-review and fix in the long run. 
 
@@ -73,7 +73,7 @@ jobs:
             -Dsonar.token=$SONAR_TOKEN
 ```
 
-3. Notice we've commented out the run paramters at the top. We just want this to run on the initial commit to our repo, but you can modify and tweak these parameters to your heart's content. In a real-world scenario, you want to be consistent about scanning commits and pull requests so that issues are effectively mitigated as further downstream as possible. 
+3. Notice we've commented out the run parameters at the top. We just want this to run on the initial commit to our repo, but you can modify and tweak these parameters to your heart's content. In a real-world scenario, you want to be consistent about scanning commits and pull requests so that issues are effectively mitigated as further downstream as possible. 
 
 4. Commit the changes to your repo and watch the action run!
 
@@ -81,7 +81,7 @@ jobs:
 
 ### Prevention 
 
-So far, we've looked at how to successfully scan the code both locally and on commit. Now, how do we ensure this code is cleaned before merging? We can use SonarQube's built-in DevOps platform integration with GitHub to connect directly to our Juice-Shop repo and run a quality gate on the pull request. 
+So far, we've looked at how to successfully scan the code both locally and on commit. Now, how do we ensure this code is cleaned before merging? We can use the SonarQube built-in DevOps platform integration with GitHub to connect directly to our Juice-Shop repo and run a quality gate on the pull request. 
 
 We could modify our actions workflow file to include pull requests, but since the scan would run after the PR, there's no automation in place to block the PR. Using the built-in integration, we can do just that!
 
@@ -89,7 +89,7 @@ We could modify our actions workflow file to include pull requests, but since th
 
 1. We're going to configure a new quality gate in SonarQube that will evaluate our builds and pass or fail them accordingly. We can then use these pass/fail statuses in our GitHub actions to gait our builds. This means you can effectively prevent builds from passing to the next stage if they don't pass the criteria you've set. A good starting point would be to block anything that's identified as a Blocker (Critical) or High. 
 
-2. Login to SonarQube and navigate to Quality Gates in the top nvigation pane.
+2. Login to SonarQube and navigate to Quality Gates in the top navigation pane.
 
 ![](img/quality-gate-create.png)
 

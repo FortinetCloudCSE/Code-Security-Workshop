@@ -9,7 +9,7 @@ weight: 3
 
 ### SAST
 
-We will look at some popular tools for identifying and understanding common flaws in source code. Static Application Security Testing focuses on YOUR proprietary code, and testing your code without actually running the application. The benefit of SAST is that you don't need to provision infrastructure or concern yourself with docker containers just to produce a running application for security analysis. SAST tools are designed to scan the code for common flaws that attackers are experts at finding and exploiting - 
+In this chapter, we will look at some popular tools for identifying and understanding common flaws in source code. Static Application Security Testing focuses on YOUR proprietary code, and testing your code without actually running the application. The benefit of SAST is that you don't need to provision infrastructure or concern yourself with docker containers just to produce a running application for security analysis. SAST tools are designed to scan the code for common flaws that attackers are experts at finding and exploiting - 
 
 ```
 Cross-Site Scripting (XSS) 
@@ -42,7 +42,7 @@ https://github.com/juice-shop/juice-shop
 
 ![](img/sonarq-8.png)
 
-4. On the new project landing page, select the anlysis method. Choose "Locally."
+4. On the new project landing page, select the analysis method. Choose "Locally."
 
 ![](img/sast-2.png)
 
@@ -54,7 +54,7 @@ https://github.com/juice-shop/juice-shop
 
 ![](img/sast-4.png)
 
-7. For analysis, select "JS/TS & Web." Run the npm install command for your local machine architecture. On MacOS for example, you can istall NPM via Brew.
+7. For analysis, select "JS/TS & Web." Run the npm install command for your local machine architecture. On MacOS for example, you can install NPM via Brew.
 
 ![](img/sast-5.png)
 
@@ -95,7 +95,7 @@ docker run \
 
 ![](img/sast-8.png)
 
-3. For now, click on "Issues." On the left, notice how the findings are organized. We can view issues by Software Quality, Severity, and Clean Code Attributes. We can also filter by Security Category to sort on speciifc OWASP guidelines. 
+3. For now, click on "Issues." On the left, notice how the findings are organized. We can view issues by Software Quality, Severity, and Clean Code Attributes. We can also filter by Security Category to sort on specific OWASP guidelines. 
 
 ![](img/sast-9.png)
 
@@ -111,9 +111,9 @@ docker run \
 
 4. In this case, the developer disabled the input sanitization check for Angular. This is something that should never pass the QA stage. 
 
-5. Click on the tabs for "What's the Risk?," "Assess the Risk," and "How can I fix it?" to learn more about the recommendations for aoiding this type of problem. 
+5. Click on the tabs for "What's the Risk?," "Assess the Risk," and "How can I fix it?" to learn more about the recommendations for avoiding this type of problem. 
 
-6. Expand the "DOS" section. We can see there are a number of issues in code where a denial of service may be possible due to regex backtracking or non-limits on file uploads. There's alot to unpack here, but just know that these are issues that require careful evaluation. 
+6. Expand the "DOS" section. We can see there are a number of issues in code where a denial of service may be possible due to regex backtracking or non-limits on file uploads. There's a lot to unpack here, but just know that these are issues that require careful evaluation. 
 
 ![](img/dos.png)
 
