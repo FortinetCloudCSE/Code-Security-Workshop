@@ -6,6 +6,8 @@ weight: 2
 
 ### Lab 1 Overview
 
+**Click this [Link](https://fortinet.qwiklabs.com/authoring/labs/29) to access the lab!**
+
 The goal of this lab is to, as quickly as possible, get a simple web site running and exposed to the internet.  This website will require some compute resources to run on, exposed to the Internet (inbound/outbound) and permissions to access a centrally managed database.
 
 Application Diagram
@@ -50,7 +52,7 @@ Next choose Ubuntu as the operating system you want running in your new virtual 
 ![](img/ec2-2.png)
 
 Now we need configure what credentials we will use to access this virtual server once it is up and running.
-Select `FortiDevKey` from the drop-down.  This key was created by Qwkilabs and can be used within AWS or from you local machine to access your virtual server.
+Select `FortiDevKey` from the drop-down.  This key was created by Qwiklabs and can be used within AWS or from you local machine to access your virtual server.
 
 ![](img/ec2-3(4).png)
 

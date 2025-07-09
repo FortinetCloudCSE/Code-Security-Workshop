@@ -6,7 +6,7 @@ weight: 3
 
 ### Overview
 
-During this discussion, we'll talk about basic source code management practices. Some you may be familiar with, some may be newer concepts. The goal is to reinforce and re-introduce those concepts. Many of the topics we will discuss in this workshop are standards defined by the Open Source Security foundation (https://best.openssf.org/)
+During this discussion, we'll talk about basic source code management practices. Some you may be familiar with, some may be newer concepts. The goal is to re-inforce and re-introduce those concepts. Many of the topics we will discuss in this workshop are standards defined by the Open Source Security foundation (https://best.openssf.org/)
 
 #### **CI/CD**
 ##### Don't allow workflows to approve pull requests
@@ -102,7 +102,7 @@ This creates branches in development, splits teams off into separate projects, a
 
 <img src="img/CI-CD-3.png" alt="CI/CD Diagram" style="width:75%;">
 
-For those reasons, CI/CD has given rise to a newer concept referred to as Continuous Promotion (CP). The goal of continuous promotion is to centralize the decision-making process for elevating builds into different environments. 
+For those reasons, CI/CD has given rise to a newer concept referred to as Continuous Promotion (CP). The goal of continous promotion is to centralize the decision-making process for elevating builds into different environments. 
 
 <img src="img/CI-CP.png" alt="CI/CD Diagram" style="width:75%;">
 
@@ -131,11 +131,11 @@ If a user has org admin privileges and doesn't login, that means they don't need
 
 ##### Don't allow committer aprovals
 
-This is a big one, and frankly one that is still prevalent in our industry. For small boutiques and mom and pop shops, it's not unusual to have a single developer, security architect, or devops persona maintaining code for a retail or internal application. Approving your own commits is tantamount to grading your own math test. If you don't understand the math, you're not in a position to objectively approve of the answers. Having at least 1 peer reviewer of the code is bare minimum in terms of best practices. 
+This is a big one, and frankly one that is still prevanlent in our industry. For small boutiques and mom and pop shops, it's not unusual to have a single developer, security architect, or devops persona maintaining code for a retail or internal application. Apprving your own commits is tantamount to grading your own math test. If you don't understand the math, you're not in a position to objectively approve of the answers. Having at least 1 peer reviwer of the code is bare minimum in terms of best practices. 
 
 ##### Require at least 2 reviewers
 
-As stated in the previous section, peer review is a critical practice because it invites collaboration and education opportunities. Even if you are the only developer, and you've written the guidelines, having a peer review your commits and ensure that you've actually stayed within the guidelines helps to protect you and the organization. 
+As stated in the previous section, peer review is a critical practice because it invites collaboration and education opportuntities. Even if you are the only developer, and you've written the guidelines, having a peer review your commits and ensure that you've actually stayed within the guidelines helps to protect you and the organization. 
 
 
 ##### Don't merge pull requests unless all checks pass
@@ -144,7 +144,7 @@ Checks exist for a reason. Whether it's merge conflicts, code scanning, or linti
 
 Occasionally, compliance checks can fail on strict criteria. An example of this could be broad permissions on an IAM role policy, and the compensating control would be a conditional rule in the policy such as an external ID.
 
-Decisions about compensating controls and/or exemptions should always be documented in the accompanying ticket or change artifact so that it's clear during routine audits or legal review why the checks were bypassed. 
+Decisions about compensating controls and/or exemptions should always be documnted in the accompanying ticket or change artifact so that it's clear during routine audits or legal review why the checks were bypassed. 
 
 ##### Never rewrite Git history
 
@@ -166,10 +166,10 @@ GitHub, for example, has some wonderful built-in mechanisms that can improve the
 <img src="img/GH1.png" alt="CI/CD Diagram" style="width:100%;">
 
 ###### Security Policy
-A security policy helps security researchers understand who to contact in the event of a security issue. If there are no clear instructions about who maintains the repository or who to contact in the event an issue arises, the reporter may feel they have a responsibility to publicly disclose by raising a public issue or posting on social media. Responsible disclosure is for the greater good, so don't think anyone will lose sleep over your hurt feelings.  
+A security policy helps security researchers understand who to contact in the event of a security issue. If there are no clear instructions about who maintains the repository or who to contact in the event an issue arises, the reporter may feel they have a repsonibility to publicly disclose by raising a public issue or posting on social media. Responsible disclosure is for the greater good, so don't think anyone will lose sleep over your hurt feelings.  
 
 ###### Security Advisories
-Repository owners, organization owners, security managers, and users with the admin role can collaborate on security issues privately and work towards resolution. 
+Repository owners, organization owners, security managers, and users with the admin role can collborate on security issues privately and work towards resolution. 
 
 ###### Private vulnerability reporting
 Allows users to report security vulnerabilities in your repository based on the security policy you have defined.
@@ -189,7 +189,7 @@ GitHub Advanced Security has some wonderful options for security guardrails, inc
 <img src="img/GH2.png" alt="CI/CD Diagram" style="width:75%;">
 
 #### Use single-sign-on 
-Not using an SSO solution makes it more difficult to track a potentially compromised user’s actions across different systems, prevents the organization from defining a common password policy, and makes it challenging to audit different aspects of the user’s behavior
+Not using an SSO solution makes it more difficult to track a potentially compromised user’s actions accross different systems, prevents the organization from defining a common password policy, and makes it challenging to audit different aspects of the user’s behavior
 
 #### Webhooks Should Be Configured To Use SSL
 If SSL verification is disabled, any party with access to the target DNS domain can masquerade as your designated payload URL, allowing it freely read and affect the response of any webhook request. In the case of GitHub Enterprise Server instances, it may be sufficient only to control the DNS configuration of the network where the instance is deployed, as an attacker can redirect traffic to the target domain in your internal network directly to them, and this is often much easier than compromising an internet-facing domain.

@@ -11,4 +11,6 @@ We will look at some popular tools for identifying and understanding common flaw
 
 #### Lab 2
 
-In Lab 2 you will look at various wmethods to identify vulnerabilities in web applications and learn how to prevent those vulnerable web applications from being deployed. 
+In Lab 2, you will look at various methods to identify vulnerabilities in web applications and learn how to prevent those vulnerable web applications from being deployed. 
+
+**Click this [Link](https://fortinet.qwiklabs.com/authoring/labs/32) to access the lab!**

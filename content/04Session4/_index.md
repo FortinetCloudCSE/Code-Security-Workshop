@@ -11,4 +11,4 @@ We will look at some popular tools for identifying and understanding common flaw
 
 #### Lab 3
 
-In Lab 3 you will get prevent a vulnerable infrastrcture configuration from being deployed.
+In Lab 3, you will learn how to prevent vulnerable infrastructure configurations from being deployed using Terraform.

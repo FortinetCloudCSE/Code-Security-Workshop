@@ -60,4 +60,4 @@ Prioritizing readability over brevity makes code easier to understand and mainta
 ##### Simplicity:
 Strive for the simplest solution possible, avoiding unnecessary complexity. 
 
-In this chapter we've talked about taking the first step in securing our code, which is to write meaninfgul, error free code in the first place. Not as easy as it sounds! In the next chapter, we'll discuss repository-specific safeguards for protecting our source code that everyone should be aware of! 
+In this chapter we've talked about taking the first step in securing our code, which is to write meaningful, error free code in the first place. Not as easy as it sounds! In the next chapter, we'll discuss repository-specific safeguards for protecting our source code that everyone should be aware of! 
