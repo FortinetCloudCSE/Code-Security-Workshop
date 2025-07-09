@@ -9,7 +9,9 @@ weight: 5
 
 ### Install SCA Tools
 
-We will look at some popular tools for identifying and understanding common flaws in source code, specifically dependency problems and licensing issues. SonarQube does not natively support SCA, but SCA findings can be imported using the Dependency Check tool plugin from OWASP. To install the plugin, follow the steps below:
+We will continue on our journey of understanding common flaws in source code, specifically dependency problems and licensing issues. Software Composition Analysis (SCA) is the process of identifying and managing open source and third-party components within a software codebase. It is crucial in a security program because these components often contain known vulnerabilities that can be exploited if left unpatched. SCA helps organizations proactively detect and remediate risks, ensuring compliance and reducing the attack surface of their applications.
+
+SonarQube does not natively support SCA, but SCA findings can be imported using the Dependency Check tool plugin from OWASP. To install the plugin, follow the steps below:
 
 1. Log in to your SonarQube instance
 
@@ -85,7 +87,7 @@ mvn clean install
 
 ![](img/sonarq-8.png)
 
-4. On the new project landing page, select the anlysis method. Choose "Locally."
+4. On the new project landing page, select the analysis method. Choose "Locally."
 
 ![](img/sonarq-9.png)
 
@@ -195,3 +197,5 @@ If successful, your terminal should show a successful analysis:
 ##### **The Bottom Line**
 
 As you can see from the findings, there's a long list of CVEs associated with third-party libraries. This underscores the importance of early detection. Implementing security policies to handle SCA findings along with regular scans can reduce the potential for unintended exposures. 
+
+You've completed this section! You can move on to the next chapter. 
