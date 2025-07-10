@@ -24,11 +24,11 @@ In the AWS console, navigate to EC2. Scroll down on the left hand navigation pan
 
 Click on the name of the SonarQube ALB.
 
-![](img/alb2.png)
+![](img/alb2-1.png)
 
 Copy the DNS name of your Load Balancer and enter into your browser.
 
-![](img/alb3.png)
+![](img/alb3-1.png)
 
 You can now login to your SonarQube instance. The default username and password is admin:admin. You'll be prompted to change your password upon first login. 
 
