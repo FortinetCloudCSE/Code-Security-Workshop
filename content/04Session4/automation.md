@@ -73,7 +73,7 @@ Click **[here](https://fortinet.qwiklabs.com/authoring/labs/33)** to access the 
 
 9. Now, execute your build project and watch Checkov go to work!
 
-![](img/codebuildrun.png)
+![](img/codebuildrun-1.png)
 
 10. You can tail the logs once the build starts. 
 

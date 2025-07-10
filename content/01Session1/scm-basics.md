@@ -108,10 +108,13 @@ For those reasons, CI/CD has given rise to a newer concept referred to as Contin
 
 Tools like Kargo and Devtron are popular CI/CP tools for helping dev teams coordinate the release of new code in each stage or environment for Kubernetes deployments.  Tools like JFrog Artifactory and Jenkins are widely used for build automation, deployment, and promotion of containerized applications or monolithic applications. Jenkins utilizes a Build Promotion plugin, while Jfrog has build promotion operations built-in and can be triggered via APIs, the CLI, or CI integrations. See below for more detail on each:
 
-Kargo - `https://kargo.io/`
-Devtron - `https://devtron.ai/`
-JFrog - `https://jfrog.com/help/r/how-does-build-promotion-work/artifactory-how-does-build-promotion-work`
-Jenkins - `https://plugins.jenkins.io/promoted-builds/`
+**[Kargo](https://kargo.io/)**
+
+**[Devtron](https://devtron.ai/)**
+
+**[JFrog](https://jfrog.com/help/r/how-does-build-promotion-work/artifactory-how-does-build-promotion-work)**
+
+**[Jenkins](https://plugins.jenkins.io/promoted-builds/)**
 
 #### **Access Control**
 

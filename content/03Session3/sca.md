@@ -103,7 +103,7 @@ mvn clean install
 
 8. You can copy the output to a notepad or text file, but we won't be using this exact command.
 
-![](img/sonarq-13.png)
+![](img/sonarq-13-1.png)
 
 
 ##### Run the Sonar Scanner 
@@ -182,7 +182,7 @@ docker run --rm \
 ```
 If successful, your terminal should show a successful analysis:
 
-![](img/sonarq-14.png)
+![](img/sonarq-14-1.png)
 
 ##### View the Dependency Check Report
 
